@@ -1,0 +1,90 @@
+#social_icon_list {
+    position: relative
+}
+#social_icon_list>li{
+    width:84px;
+    height: 84px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: static;
+    display: block; /*pentru meniu de socializare vertical*/
+    /*display: inline-block; /*pentru meniu de socializare orizontal*/
+}
+
+#Facebook_icon{
+    background: url('social_icon_image.png') 0 84px;
+}
+#Facebook_icon:hover{
+    background: url('social_icon_image.png') 0px 0px;
+}
+
+#Flickr_icon{
+    background: url('social_icon_image.png') -84px 84px;
+}
+#Flickr_icon:hover{
+    background: url('social_icon_image.png') -84px 0px;
+}
+
+#Dribbble_icon{
+    background: url('social_icon_image.png') -168px 84px;
+}
+#Dribbble_icon:hover{
+    background: url('social_icon_image.png') -168px 0px;
+}
+
+#Google_plus_icon{
+    background: url('social_icon_image.png') -252px 84px;
+}
+#Google_plus_icon:hover{
+    background: url('social_icon_image.png') -252px 0px;
+}
+
+#LinkedIn_icon{
+    background: url('social_icon_image.png') -336px 84px;
+}
+#LinkedIn_icon:hover{
+    background: url('social_icon_image.png') -336px 0px;
+}
+
+#Pinterest_icon{
+    background: url('social_icon_image.png') -420px 84px;
+}
+#Pinterest_icon:hover{
+    background: url('social_icon_image.png') -420px 0px;
+}
+
+#RSS_icon{
+    background: url('social_icon_image.png') -504px 84px;
+}
+#RSS_icon:hover{
+    background: url('social_icon_image.png') -504px 0px;
+}
+
+#Skype_icon{
+    background: url('social_icon_image.png') -588px 84px;
+}
+#Skype_icon:hover{
+    background: url('social_icon_image.png') -588px 0px;
+}
+
+#Twitter_icon{
+    background: url('social_icon_image.png') -672px 84px;
+}
+#Twitter_icon:hover{
+    background: url('social_icon_image.png') -672px 0px;
+}
+
+#Vimeo_icon{
+    background: url('social_icon_image.png') -756px 84px;
+}
+#Vimeo_icon:hover{
+    background: url('social_icon_image.png') -756px 0px;
+}
+
+#YouTube_icon{
+    background: url('social_icon_image.png') -840px 84px;
+}
+#YouTube_icon:hover{
+    background: url('social_icon_image.png') -840px 0px;
+}

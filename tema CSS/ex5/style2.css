@@ -1,0 +1,26 @@
+div{
+    background: yellow;
+    border: 2px solid black;
+    width: 390px; 
+}
+ul{
+    list-style-type: none;
+    display:block;
+    margin:0;
+    padding:10px 10px 0;
+}
+li{
+    display: block;
+    width: 250px;
+    height:160px;
+    margin: 0;
+}
+img{
+    width:170px;
+    height:150px;
+}
+p{
+    text-align: right;
+    position: relative;
+    top:-100px
+}
