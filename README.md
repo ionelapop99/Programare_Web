@@ -1,1 +1,1 @@
-# Programare_Web
+Acest Repository contine temele de laborator realizate pentru disciplina Programare Web. In realizarea acestor teme am folosit limbajele: Html,CSS,JavaScript. Temele sunt structurate in repository pe foldere.
