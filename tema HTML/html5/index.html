@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ro"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Formular de inscriere la Facultatea de Matematica si Informatica, UBB </title>
+        <meta name="description" content="Formular de inscriere la Facultatea de Matematica si Informatica, UBB">
+        <meta name="keywords" content="Formulare, Inscriere la Facultate, Facultatea de Matematica si Informatica,UBB">
+        <meta name="author" content="Pop Ionela Denisa">
+    </head>
+    <body>
+        <div>
+            <a href="http://www.cs.ubbcluj.ro/" target="_blank">
+            <img src="logo.png" width="470" height="80" alt="Facultatea de Matematica si Informatica">
+            </a>
+        </div>
+        
+        <h1>Formular de inscriere la Facultatea de Matematica si Informatica, UBB</h1>
+        <form  action="index.html" method="POST">
+        <table style="border: 1px solid black;">
+            <tr><th colspan="3">Date Personale</th></tr>
+            <tr>
+                <td><label>Nume:</label><input type="text" ></td>
+                <td colspan="2"><label>Prenume:</label><input type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>Data nasterii:</label><input type="text" id="birthday" name="birthday"></td>
+                <td colspan="2"><label>Nationalitatea:</label><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                        <label>Gen:</label> 
+                        <input type="radio" id="m" name="gen" value="Masculin">
+                        <label for="m">Masculin</label>
+                        <input type="radio" id="f" name="gen" value="Feminin">
+                        <label for="f">Feminin</label>
+                        <input type="radio" id="altGen" name="gen" value="altGen">
+                        <label for="altGen">Alt Gen</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Tara:</label><input type="text" placeholder="Romania"></td>
+                <td><label>Judet</label><input type="text" placeholder="Cluj"></td>
+                <td><label>Oras:</label><input type="text" placeholder="Cluj-Napoca"></td>
+            </tr>
+            <tr>
+                <td><label>Cod Postal:</label><input type="text"></td>
+                <td colspan="2"><label>Adresa:</label><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label><input type="email"></td>
+                <td><label>Telefon:</label><input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0786-187-432" required="required"></td>
+                <td><label>Fix:</label><input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0264-187-432" disabled="disabled"></td>
+            </tr>
+        </table>
+
+        <h2>Note Bacalaureat, Concurs Mate-Info UBB si Concursul de Admitere</h2>
+        <table style="border: 1px solid black;">
+            <tr>
+                <th>
+                    <label>Note Bacalaureat</label>
+                </th>
+                <th>
+                    <label>Concurs Mate-Info UBB</label>
+                </th>
+            </tr>
+            <tr>
+                <td><label>Medie generala:</label><input type="text" placeholder="8.60"></td>
+                <td>
+                    <label>Ai participat la concurs?</label>
+                    <input type="radio" name="participat" value="Da"><label>Da</label>
+                    <input type="radio" name="participat" value="Nu"><label>Nu</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nota Informatica:</label><input type="text"  placeholder="9.60"></td>
+                <td><label>Nota obtinuta:</label><input type="text"  placeholder="9.60"></td>
+            </tr>
+            <tr>
+                <td><label>Nota Matematica:</label><input type="text"  placeholder="7.60"></td>
+                <td>
+                    <input type="checkbox"><span>Doresc ca nota obtinuta la concursul Mate-Info UBB 
+                    sa fie luata in considerare pentru calclul Mediei de Admitere.</span>
+                </td>
+            </tr>
+            <tr>
+                <td><p>In calculul mediei de admitere doresc sa mi se ia in considerare, nota la diciplina:</p> 
+                    <input type="radio" name="notaM/I" value="Informatica"><label>Informatica</label>
+                    <input type="radio" name="notaM/I" value="Matematica"><label>Matematica</label>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>Concurs Admitere</label>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="points">Cat de mult iti doresti sa fii admis la Facultatea de Matematica si Informatica?</label>
+                    <input type="range" id="points" name="points" min="0" max="10" step="1" value="5" data-show-value="true">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox"><span>Doresc sa dau examenul de Admitere.</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> 
+                    <input type="checkbox"><span>Doresc ca pentru calculul medie de Admitere la Facultate
+                    sa se ia in considerare nota cea mai mare dintre Concursul Mate-Info UBB si examenul de Admitere.</span>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Optiuni Facultatea de Matematica si Informatica</h2>
+        <table style="border: 1px solid black;">
+            <tr>
+                <th><label>Optiuni disponibile la Facultatea de Matematica si Informatica</label></th>
+                <th><label>Optiunile studentului</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Domenii Disponibile:</strong></label>
+                    <ol type="A">
+                        <li>Domeniul Matematica</li>
+                        <li>Domeniul Informatica</li>
+                    </ol>
+                </td>
+                <td rowspan="2">
+                    <table style="border: 1px solid black;">
+                        <tr>
+                            <td>
+                                    <b>Alege specializarile in ordinea in care doresti sa iti fie luate
+                                        in considerare pentru procesul de admitere.
+                                    </b>
+
+                                <label for="facultatea">Facultatea:</label>  
+                                <input type="text" id="facultatea" name="facultatea" value="de Matematica si Informatica" readonly><br>
+                                <br>
+                                <label for="opt1">Optiunea 1:</label>
+                                <select id="opt1" title="Cea mai importanta optiune" multiple="multiple" size="2">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                                <label for="opt2">Optiunea 2:</label>
+                                <select id="opt2" title="A doua cea mai importanta optiune" multiple="multiple" size="2">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                                <label for="opt3">Optiunea 3:</label>
+                                <select id="opt3" title="A treia cea mai importanta optiune" multiple="multiple" size="2">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                                <label for="opt4">Optiunea 4:</label>
+                                <select id="opt4">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                                <label for="opt5">Optiunea 5:</label>
+                                <select id="opt5">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                                <label for="opt6">Optiunea 6:</label>
+                                <select id="opt6">
+                                    <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                    <option value="IR">Informatica,Romana</option>
+                                    <option value="IE">Informatica,Engleza</option>
+                                    <option value="IG">Informatica,Germana</option>
+                                    <option value="IM">Informatica,Maghiara</option>
+                                    <option value="MIR">Matematica-Informatica,Romana</option>
+                                    <option value="MIE">Matematica-Informatica,Engleza</option>
+                                    <option value="MIG">Matematica-Informatica,Germana</option>
+                                    <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                    <option value="MR">Matematica,Romana</option>
+                                    <option value="ME">Matematica,Engleza</option>
+                                    <option value="MG">Matematica,Germana</option>
+                                    <option value="MM">Matematica,Maghiara</option>
+                                </select><br><br>
+                          
+                                <label for="opt7">Optiunea 7:</label>
+                                    <select id="opt7">
+                                        <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                        <option value="IR">Informatica,Romana</option>
+                                        <option value="IE">Informatica,Engleza</option>
+                                        <option value="IG">Informatica,Germana</option>
+                                        <option value="IM">Informatica,Maghiara</option>
+                                        <option value="MIR">Matematica-Informatica,Romana</option>
+                                        <option value="MIE">Matematica-Informatica,Engleza</option>
+                                        <option value="MIG">Matematica-Informatica,Germana</option>
+                                        <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                        <option value="MR">Matematica,Romana</option>
+                                        <option value="ME">Matematica,Engleza</option>
+                                        <option value="MG">Matematica,Germana</option>
+                                        <option value="MM">Matematica,Maghiara</option>
+                                    </select><br><br>
+                                    <label for="opt8">Optiunea 8:</label>
+                                    <select id="opt8">
+                                        <option value="0" selected>---Alege Specializarea Dorita-----</option>
+                                        <option value="IR">Informatica,Romana</option>
+                                        <option value="IE">Informatica,Engleza</option>
+                                        <option value="IG">Informatica,Germana</option>
+                                        <option value="IM">Informatica,Maghiara</option>
+                                        <option value="MIR">Matematica-Informatica,Romana</option>
+                                        <option value="MIE">Matematica-Informatica,Engleza</option>
+                                        <option value="MIG">Matematica-Informatica,Germana</option>
+                                        <option value="MIM">Matematica-Informatica,Maghiara</option>
+                                        <option value="MR">Matematica,Romana</option>
+                                        <option value="ME">Matematica,Engleza</option>
+                                        <option value="MG">Matematica,Germana</option>
+                                        <option value="MM">Matematica,Maghiara</option>
+                                    </select><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="obs">Observatii:</label><br>
+                                <textarea id="obs" rows="3" cols="70" maxlength="400"> 
+                                </textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Specializari:</strong></label>
+                    <ol type="1" start="1">
+                        <li>Informatica:
+                            <ul>
+                                <li>Limba Romana</li>
+                                <li>Limba Engleza</li>
+                                <li>Limba Germana</li>
+                                <li>Limba Maghiara</li>
+                            </ul>
+                        </li>
+                        <li>Matematica-Informatica:
+                            <ul>
+                                <li>Limba Romana</li>
+                                <li>Limba Engleza</li>
+                                <li>Limba Germana</li>
+                                <li>Limba Maghiara</li>
+                            </ul>
+                        </li>
+                        <li>Matematica:
+                            <ul>
+                                <li>Limba Romana</li>
+                                <li>Limba Engleza</li>
+                                <li>Limba Germana</li>
+                                <li>Limba Maghiara</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Campuri obligatorii</legend>
+        <div>
+                <input type="checkbox" id="c1" name="termani&conditii" value="t&c" checked="checked">
+                <label for="c1"> Sunt de acord cu Termenii si Coditiile.</label><br>
+                <input type="checkbox" id="c2" name="procesareDate" value="pDp" checked="checked">
+                <label for="c2"> Sunt de acord cu procesarea datelor personale.</label><br>
+        </div>
+        <br>
+            <input type="submit" value="Salveaza si Tipareste">
+        </fieldset>
+        </form>
+    </body>
+</html>
