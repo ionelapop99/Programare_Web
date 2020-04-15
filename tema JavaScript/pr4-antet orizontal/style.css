@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+table tr td {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+table tr th {
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+table tr {
+    border-top: 1px solid grey;
+    height: 35px;
+}
